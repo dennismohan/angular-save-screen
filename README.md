@@ -3,21 +3,19 @@ An angular directive that listens for click events. on click it will launch a ov
 
 ## Dependencies
 * jQuery
-* material design lite js
-* material design lite css
-* material design lite fonts
+* material design lite (mdl), css,js,icons
 
 ```
-		<!-- Material Design Light Dependencies -->
-		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css"></link>
-		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+<!-- Material Design Light Dependencies -->
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css"></link>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
 ```
 NOTE: For MDL to work correctly in angular, you must call componentHandler.upgradeAllRegistered() so the MDL javascript registers and handles the animations. 
 
-* Example on setting up mdl in angular
+Example on setting up mdl in angular:
 
-```
+```javascript
 (function(){
 	"use strict";
 	angular.module('YourModule')

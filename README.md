@@ -1,7 +1,9 @@
 # angular-save-screen
 An angular directive that listens for click events. on click it will launch a overlay with a loading icon.
 
-The saving screen directive currently depends on JQuery as well as Bootstrap.
+## Dependencies
+* jQuery
+* bootstrap css
 
 <h2 style="margin-top:10px">Directions</h2>
 

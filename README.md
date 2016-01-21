@@ -33,7 +33,7 @@ Currently one further requirement exists, the DOM Element which you want blurred
 
 Example of use:
 
-<button bw-saving-screen status="statusObjectInController">Click to Save!</button>
+    <button bw-saving-screen status="statusObjectInController">Click to Save!</button>
 
 
 I plan on adding some sample code to display how it is used, however this will be done at a later time. Feel free to request it if needed and I will try to make some time.

@@ -1,7 +1,7 @@
 # angular-save-screen
 An angular directive that listens for click events. on click it will launch a overlay with a loading icon.
 
-The saving screen directive currently depends on JQuery as well as Bootstrap. I plan on creating the following flavors of the directive:angular material, material design lite, and sometime in the future a style independent (icons and button styles will be part set as attributes). As well as removing the JQuery dependency.
+The saving screen directive currently depends on JQuery as well as Bootstrap.
 
 <h2 style="margin-top:10px">Directions</h2>
 
@@ -31,9 +31,13 @@ This js object will control the overlay. The message property will always be dis
 
 Currently one further requirement exists, the DOM Element which you want blurred must have the following class 'event-login-container' for the blur effect to work. The blur effect is added using jQuery when the directive is clicked.
 
-Example of use:
+<h2 style="margin-top:10px">Example</h2>
 
     <button bw-saving-screen status="statusObjectInController">Click to Save!</button>
 
+<h2 style="margin-top:10px">Future Plans</h2>
+<ul>
+	<li>I plan on adding some sample code in the repo to show an example as well as a plunker, however this will be done at a later time. Feel free to request it if needed and I will try to make some time.</li>
 
-I plan on adding some sample code to display how it is used, however this will be done at a later time. Feel free to request it if needed and I will try to make some time.
+	<li>I plan on creating the following flavors of the directive:angular material, material design lite, and sometime in the future a style independent (icons and button styles will be part set as attributes). As well as removing the JQuery dependency.</li>
+</ul>

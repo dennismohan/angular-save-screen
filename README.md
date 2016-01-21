@@ -8,10 +8,12 @@ The saving screen directive currently depends on JQuery as well as Bootstrap.
 To use, import the provided JS file into your HTML page and Inject the BW.LoadingScreen into the module where you plan on using the directive.
 
 The directive accepts a js object for its status attribute.
-``` {
-```     isSuccess: true/false,
-```     message: 'this message is always displayed on screen'
-``` }
+``` 
+{
+	isSuccess: true/false,
+    message: 'this message is always displayed on screen'
+}
+```
 
 This js object will control the overlay. The message property will always be displayed on the page, while the isSuccess controls the behaviour with the following states.
 

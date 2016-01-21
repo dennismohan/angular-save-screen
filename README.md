@@ -1,9 +1,12 @@
 # angular-save-screen
 An angular directive that listens for click events. on click it will launch a overlay with a loading icon.
 
-The saving screen directive currently depends on JQuery as well as Bootstrap. I plan on creating different the following flavors:angular material, material design lite, and sometime in the future a style independent (you inject icons and button styles). As well as removing the JQuery dependency.
+The saving screen directive currently depends on JQuery as well as Bootstrap. I plan on creating the following flavors of the directive:angular material, material design lite, and sometime in the future a style independent (icons and button styles will be part set as attributes). As well as removing the JQuery dependency.
 
-To use import the provided JS file into your HTML page and Inject the BW.LoadingScreen into the module where you plan on the directive.
+<h2 style="margin-top:10px">Directions</h2>
+<hr/>
+
+To use, import the provided JS file into your HTML page and Inject the BW.LoadingScreen into the module where you plan on the directive.
 
 The directive accepts a js object for its status attribute with the following 2 properties { message: 'this message is always displayed on screen', isSuccess: true/false}
 

@@ -39,3 +39,4 @@ Currently one further requirement exists, the DOM Element which you want blurred
 
 * I plan on adding some sample code in the repo to show an example as well as a plunker, however this will be done at a later time. Feel free to request it if needed and I will try to make some time.
 * I plan on creating the following flavors of the directive:angular material, material design lite, and sometime in the future a style independent (icons and button styles will be part set as attributes). As well as removing the JQuery dependency.
+ * [Material Design Lite (MDL) Branch](https://github.com/dennismohan/angular-save-screen/tree/MDL)

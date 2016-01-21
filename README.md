@@ -3,7 +3,39 @@ An angular directive that listens for click events. on click it will launch a ov
 
 ## Dependencies
 * jQuery
-* bootstrap css
+* material design lite js
+* material design lite css
+* material design lite fonts
+
+```
+		<!-- Material Design Light Dependencies -->
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css"></link>
+		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+```
+NOTE: For MDL to work correctly in angular, you must call componentHandler.upgradeAllRegistered() so the MDL javascript registers and handles the animations. 
+
+* Example on setting up mdl in angular
+
+```
+(function(){
+	"use strict";
+	angular.module('YourModule')
+		.run(RunFunction);
+
+	RunFunction.$inject = ['$rootScope','$timeout'];
+	function RunFunction($rootScope, $timeout){
+		$rootScope.$on('$viewContentLoaded', handleViewLoadEvent)
+
+		function handleViewLoadEvent(){
+			$timeout(function(){
+				componentHandler.upgradeAllRegistered();
+			});
+		}
+	}
+})();
+```
+
 
 ## Directions
 
@@ -38,4 +70,3 @@ Currently one further requirement exists, the DOM Element which you want blurred
 ## Future Plans
 
 * I plan on adding some sample code in the repo to show an example as well as a plunker, however this will be done at a later time. Feel free to request it if needed and I will try to make some time.
-* I plan on creating the following flavors of the directive:angular material, material design lite, and sometime in the future a style independent (icons and button styles will be part set as attributes). As well as removing the JQuery dependency.

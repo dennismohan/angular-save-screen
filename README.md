@@ -67,6 +67,10 @@ Currently one further requirement exists, the DOM Element which you want blurred
 
     <button bw-saving-screen status="statusObjectInController">Click to Save!</button>
 
+## Flavors
+* [Bootstrap Branch](https://github.com/dennismohan/angular-save-screen/)
+
+
 ## Future Plans
 
 * I plan on adding some sample code in the repo to show an example as well as a plunker, however this will be done at a later time. Feel free to request it if needed and I will try to make some time.
